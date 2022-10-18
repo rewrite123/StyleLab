@@ -13,6 +13,8 @@ To build for testing
 To build for production
 `npm run build`
 
+There are some decent examples in ./public/index.html that are used for testing
+
 All the css vars are set in index.scss under :root
 
 Setting css vars should be done with the stylelab function in the ./dist/style-lab,js file.
