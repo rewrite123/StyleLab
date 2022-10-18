@@ -35,4 +35,9 @@
     @extend .sl-hr;
     border-color: var(--sl-info-color);
   }
+  &-disabled {
+    @extend .sl-hr;
+    border-color: var(--sl-disabled-color);
+  }
+  
 }

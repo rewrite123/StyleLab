@@ -31,6 +31,7 @@ interface CssVarsInterface {
   "--sl-warning-color"?: string;
   "--sl-success-color"?: string;
   "--sl-info-color"?: string;
+  "--sl-disabled-color"?: string;
   "--sl-border-radius"?: string;
   "--sl-shadow-h1"?: string;
   "--sl-shadow-h2"?: string;

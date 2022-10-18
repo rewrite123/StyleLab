@@ -31,8 +31,8 @@
     transition: opacity 0.2s;
   }
 
-  &-primary {
-    @extend .sl-btn;
+  &.sl-primary {
+    // @extend .sl-btn;
     color: var(--sl-primary-color);
     border-color: var(--sl-primary-color);
 
@@ -41,8 +41,8 @@
     }
   }
 
-  &-secondary {
-    @extend .sl-btn;
+  &.sl-secondary {
+    // @extend .sl-btn;
     color: var(--sl-secondary-color);
     border-color: var(--sl-secondary-color);
     
@@ -52,8 +52,8 @@
   }
 
   
-  &-danger {
-    @extend .sl-btn;
+  &.sl-danger {
+    // @extend .sl-btn;
     color: var(--sl-danger-color);
     border-color: var(--sl-danger-color);
 
@@ -61,8 +61,8 @@
       background: var(--sl-danger-color);
     }
   }
-  &-hazard {
-    @extend .sl-btn;
+  &.sl-hazard {
+    // @extend .sl-btn;
     color: var(--sl-hazard-color);
     border-color: var(--sl-hazard-color);
 
@@ -70,8 +70,8 @@
       background: var(--sl-hazard-color);
     }
   }
-  &-warning {
-    @extend .sl-btn;
+  &.sl-warning {
+    // @extend .sl-btn;
     color: var(--sl-warning-color);
     border-color: var(--sl-warning-color);
 
@@ -79,8 +79,8 @@
       background: var(--sl-warning-color);
     }
   }
-  &-success {
-    @extend .sl-btn;
+  &.sl-success {
+    // @extend .sl-btn;
     color: var(--sl-success-color);
     border-color: var(--sl-success-color);
 
@@ -88,8 +88,8 @@
       background: var(--sl-success-color);
     }
   }
-  &-info {
-    @extend .sl-btn;
+  &.sl-info {
+    // @extend .sl-btn;
     color: var(--sl-info-color);
     border-color: var(--sl-info-color);
 
@@ -97,4 +97,14 @@
       background: var(--sl-info-color);
     }
   }
+  &.sl-disabled {
+    // @extend .sl-btn;
+    color: var(--sl-disabled-color);
+    border-color: var(--sl-disabled-color);
+
+    &::before {
+      background: var(--sl-disabled-color);
+    }
+  }
+  
 }
