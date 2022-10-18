@@ -1,0 +1,100 @@
+.sl-btn {
+  position: relative;
+  margin: 5px 0px;
+  padding: 10px;
+  font-size: var(--btn-font-size);
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--text-primary);
+  cursor: pointer;
+  background: #0000;
+  z-index: var(--z-index-content);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .2; 
+    z-index: 1;
+    border-radius: var(--border-radius);
+    transition: opacity 0.1s;
+  }
+  &:hover::before {
+    opacity: .3;
+    transition: opacity 0.2s;
+  }
+  &:active::before {
+    opacity: .4;
+    transition: opacity 0.2s;
+  }
+
+  &-primary {
+    @extend .sl-btn;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+
+    &::before {
+      background: var(--primary-color);
+    }
+  }
+
+  &-secondary {
+    @extend .sl-btn;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    
+    &::before {
+      background: var(--secondary-color);
+    }
+  }
+
+  
+  &-danger {
+    @extend .sl-btn;
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+
+    &::before {
+      background: var(--danger-color);
+    }
+  }
+  &-hazard {
+    @extend .sl-btn;
+    color: var(--hazard-color);
+    border-color: var(--hazard-color);
+
+    &::before {
+      background: var(--hazard-color);
+    }
+  }
+  &-warning {
+    @extend .sl-btn;
+    color: var(--warning-color);
+    border-color: var(--warning-color);
+
+    &::before {
+      background: var(--warning-color);
+    }
+  }
+  &-success {
+    @extend .sl-btn;
+    color: var(--success-color);
+    border-color: var(--success-color);
+
+    &::before {
+      background: var(--success-color);
+    }
+  }
+  &-info {
+    @extend .sl-btn;
+    color: var(--info-color);
+    border-color: var(--info-color);
+
+    &::before {
+      background: var(--info-color);
+    }
+  }
+}

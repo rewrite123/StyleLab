@@ -1,0 +1,73 @@
+.sl-in {
+  width: -webkit-fill-available; // 100% includes the padding, not just the available space inside
+  margin: 5px 0px;
+  padding: 8px;
+  font-size: var(--in-font-size);
+  border-radius: var(--border-radius);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  border-width: 1px;
+  z-index: var(--z-index-content);
+
+  &:focus-visible {
+    outline: 1px solid var(--text-primary);
+  }
+
+  &-primary {
+    @extend .sl-in;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    &:focus-visible {
+      outline: 1px solid var(--primary-color);
+    }
+  }
+  &-secondary {
+    @extend .sl-in;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    &:focus-visible {
+      outline: 1px solid var(--secondary-color);
+    }
+  }
+
+  &-danger {
+    @extend .sl-in;
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+    &:focus-visible {
+      outline: 1px solid var(--danger-color);
+    }
+  }
+  &-hazard {
+    @extend .sl-in;
+    color: var(--hazard-color);
+    border-color: var(--hazard-color);
+    &:focus-visible {
+      outline: 1px solid var(--hazard-color);
+    }
+  }
+  &-warning {
+    @extend .sl-in;
+    color: var(--warning-color);
+    border-color: var(--warning-color);
+    &:focus-visible {
+      outline: 1px solid var(--warning-color);
+    }
+  }
+  &-success {
+    @extend .sl-in;
+    color: var(--success-color);
+    border-color: var(--success-color);
+    &:focus-visible {
+      outline: 1px solid var(--success-color);
+    }
+  }
+  &-info {
+    @extend .sl-in;
+    color: var(--info-color);
+    border-color: var(--info-color);
+    &:focus-visible {
+      outline: 1px solid var(--info-color);
+    }
+  }
+}

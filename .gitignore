@@ -1,3 +1,6 @@
+# Distribute
+dist/*
+
 # Logs
 logs
 *.log

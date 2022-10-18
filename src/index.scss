@@ -1,0 +1,98 @@
+/* 
+  StyleLabs - not another styling library
+  Isaac Hormel
+  A general styling (and future component?) library for FundLabs and future projects
+*/
+
+// Set up css vars for us to use
+:root {
+  // Color
+  --primary-color: #2783ce;
+  --secondary-color: #FF5D73;
+  --accent-color: #86BBD8;
+  --text-primary: #000;
+  --text-secondary: #fff;
+  --background-primary: #fff;
+  --background-secondary: #000;
+  --border-primary: #b1b1b1;
+  --border-secondary: #cdcdcd;
+  --shadow-primary: #00000088;
+  --shadow-secondary: #94949488;
+
+  --danger-color: #FD151B;
+  --hazard-color: #F75C03;
+  --warning-color: #FFB30F;
+  --success-color: #2DDD88;
+  --info-color: #4b92e3;
+
+  // Spacing & sizing
+  --border-radius: 8px;
+
+
+  --shadow-blur: 3px;
+  // delta = 1px:2.5px | (x: number)=>`${5+1*x}px ${5+2.5*x}px 3px`
+  --shadow-h1-x: 5px;
+  --shadow-h1-y: 5px;
+  --shadow-h1: var(--shadow-h1-x) var(--shadow-h1-y) var(--shadow-blur);
+  --shadow-h2-x: 6px;
+  --shadow-h2-y: 7.5px;
+  --shadow-h2: var(--shadow-h2-x) var(--shadow-h2-y) var(--shadow-blur);
+  --shadow-h3-x: 7px;
+  --shadow-h3-y: 10px;
+  --shadow-h3: var(--shadow-h3-x) var(--shadow-h3-y) var(--shadow-blur);
+  --shadow-h4-x: 8px;
+  --shadow-h4-y: 12.5px;
+  --shadow-h4: var(--shadow-h4-x) var(--shadow-h4-y) var(--shadow-blur);
+  --shadow-h5-x: 9px;
+  --shadow-h5-y: 15px;
+  --shadow-h5: var(--shadow-h5-x) var(--shadow-h5-y) var(--shadow-blur);
+  --shadow-h6-x: 10px;
+  --shadow-h6-y: 17.5px;
+  --shadow-h6: var(--shadow-h6-x) var(--shadow-h6-y) var(--shadow-blur);
+  --shadow-h7-x: 11px;
+  --shadow-h7-y: 20px;
+  --shadow-h7: var(--shadow-h7-x) var(--shadow-h7-y) var(--shadow-blur);
+  
+  --text-size: 14px;
+
+  --h1-size: 48px;
+  --h2-size: 40px;
+  --h3-size: 32px;
+  --h4-size: 24px;
+  --h5-size: 16px;
+  --h6-size: 12px;
+
+  --in-font-size: 16px;
+
+  --btn-font-size: 16px;
+
+  // Z Indexes
+  --z-index-background: 100;
+  --z-index-content: 200;
+  --z-index-modal: 100;
+  --z-index-alert: 100;
+}
+
+.sl {
+  color: var(--text-primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Non-component non-html-element
+@import './general/align.scss';
+@import './general/shadows.scss';
+// Ex: width selectors, hoverable effects, etc... .
+
+// Non-html-element
+@import './general/card.scss';
+// Ex: navbars, toast alerts, modals, etc... .
+
+// Html-element
+@import './general/input.scss';
+@import './general/button.scss';
+@import './general/heading.scss';
+@import './general/hr.scss';
+@import './general/a.scss';
+// The normal html elements that you use all the time

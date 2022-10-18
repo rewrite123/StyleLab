@@ -1,0 +1,38 @@
+.sl-hr {
+  margin: 5px 0px;
+  padding: 0px;
+  border: 0px;
+  border-top: 1px solid var(--text-primary);
+  width: 100%;
+  z-index: var(--z-index-content);
+
+  &-primary {
+    @extend .sl-hr;
+    border-color: var(--primary-color);
+  }
+  &-secondary {
+    @extend .sl-hr;
+    border-color: var(--secondary-color);
+  }
+
+  &-danger {
+    @extend .sl-hr;
+    border-color: var(--danger-color);
+  }
+  &-hazard {
+    @extend .sl-hr;
+    border-color: var(--hazard-color);
+  }
+  &-warning {
+    @extend .sl-hr;
+    border-color: var(--warning-color);
+  }
+  &-success {
+    @extend .sl-hr;
+    border-color: var(--success-color);
+  }
+  &-info {
+    @extend .sl-hr;
+    border-color: var(--info-color);
+  }
+}

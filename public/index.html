@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>StyleLab</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./style-lab.css">
+  <script src="style-lab-var-sel.js"></script>
+</head>
+<body class="sl" style="padding: 20px;">
+
+<pre>
+interface CssVarsInterface {
+  "--primary-color"?: string;
+  "--secondary-color"?: string;
+  "--accent-color"?: string;
+  "--text-primary"?: string;
+  "--text-secondary"?: string;
+  "--background-primary"?: string;
+  "--background-secondary"?: string;
+  "--border-primary"?: string;
+  "--border-secondary"?: string;
+  "--shadow-primary"?: string;
+  "--shadow-secondary"?: string;
+  "--danger-color"?: string;
+  "--hazard-color"?: string;
+  "--warning-color"?: string;
+  "--success-color"?: string;
+  "--info-color"?: string;
+  "--border-radius"?: string;
+  "--shadow-h1"?: string;
+  "--shadow-h2"?: string;
+  "--shadow-h3"?: string;
+  "--shadow-h4"?: string;
+  "--shadow-h5"?: string;
+  "--shadow-h6"?: string;
+  "--shadow-h7"?: string;
+  "--text-size"?: string;
+  "--h1-size"?: string;
+  "--h2-size"?: string;
+  "--h3-size"?: string;
+  "--h4-size"?: string;
+  "--h5-size"?: string;
+  "--h6-size"?: string;
+  "--in-font-size"?: string;
+  "--btn-font-size"?: string;
+  "--z-index-content"?: number;
+  "--z-index-modal"?: number;
+  "--z-index-alert"?: number;
+}
+</pre>
+  
+  <button class="sl-btn-primary">primary button</button>
+  <button class="sl-btn-secondary">secondary button</button>
+  <button class="sl-btn-danger">danger button</button>
+  <button class="sl-btn-hazard">hazard button</button>
+  <button class="sl-btn-warning">warning button</button>
+  <button class="sl-btn-success">success button</button>
+  <button class="sl-btn-info">info button</button>
+
+  <hr class="sl-hr" />
+
+  <p class="sl-h1">heading 1</p>
+  <p class="sl-h2">heading 2</p>
+  <p class="sl-h3">heading 3</p>
+  <p class="sl-h4">heading 4</p>
+  <p class="sl-h5">heading 5</p>
+  <p class="sl-h6">heading 6</p>
+  
+  <hr class="sl-hr" />
+
+  <div class="sl-card">
+    <p class="sl-h1">Test card</p>
+  </div>
+
+  <hr class="sl-hr" />
+
+  <div class="sl-card sl-shadow-p1" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 1</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p2" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 2</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p3" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 3</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p4" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 4</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p5" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 5</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p6" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 6</p>
+  </div>
+
+  <div class="sl-card sl-shadow-p7" style="width: 32%; display: inline-block;">
+    <p class="sl-h4">Primary shadow 7</p>
+  </div>
+
+  <hr class="sl-hr" />
+
+</body>
+</html>
