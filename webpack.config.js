@@ -8,7 +8,7 @@ module.exports = {
   mode: process.env.NODE_ENV||'development',
   entry: {
     'style-lab': './src/StyleLab.ts',
-    'style-lab': './src/index.scss',
+    // 'style-lab': './src/index.scss',
   },
   output: {
     path: __dirname + '/dist/',
@@ -28,14 +28,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          // MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader'
         ],
       },
       {
         test: /\.scss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          // MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           'sass-loader',
         ],
