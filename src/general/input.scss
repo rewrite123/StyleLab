@@ -2,72 +2,72 @@
   width: -webkit-fill-available; // 100% includes the padding, not just the available space inside
   margin: 5px 0px;
   padding: 8px;
-  font-size: var(--in-font-size);
-  border-radius: var(--border-radius);
-  border-color: var(--text-primary);
-  color: var(--text-primary);
+  font-size: var(--sl-in-font-size);
+  border-radius: var(--sl-border-radius);
+  border-color: var(--sl-text-primary);
+  color: var(--sl-text-primary);
   border-width: 1px;
-  z-index: var(--z-index-content);
+  z-index: var(--sl-z-index-content);
 
   &:focus-visible {
-    outline: 1px solid var(--text-primary);
+    outline: 1px solid var(--sl-text-primary);
   }
 
   &-primary {
     @extend .sl-in;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    // color: var(--sl-primary-color);
+    border-color: var(--sl-primary-color);
     &:focus-visible {
-      outline: 1px solid var(--primary-color);
+      outline: 1px solid var(--sl-primary-color);
     }
   }
   &-secondary {
     @extend .sl-in;
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    // color: var(--sl-secondary-color);
+    border-color: var(--sl-secondary-color);
     &:focus-visible {
-      outline: 1px solid var(--secondary-color);
+      outline: 1px solid var(--sl-secondary-color);
     }
   }
 
   &-danger {
     @extend .sl-in;
-    color: var(--danger-color);
-    border-color: var(--danger-color);
+    // color: var(--sl-danger-color);
+    border-color: var(--sl-danger-color);
     &:focus-visible {
-      outline: 1px solid var(--danger-color);
+      outline: 1px solid var(--sl-danger-color);
     }
   }
   &-hazard {
     @extend .sl-in;
-    color: var(--hazard-color);
-    border-color: var(--hazard-color);
+    // color: var(--sl-hazard-color);
+    border-color: var(--sl-hazard-color);
     &:focus-visible {
-      outline: 1px solid var(--hazard-color);
+      outline: 1px solid var(--sl-hazard-color);
     }
   }
   &-warning {
     @extend .sl-in;
-    color: var(--warning-color);
-    border-color: var(--warning-color);
+    // color: var(--sl-warning-color);
+    border-color: var(--sl-warning-color);
     &:focus-visible {
-      outline: 1px solid var(--warning-color);
+      outline: 1px solid var(--sl-warning-color);
     }
   }
   &-success {
     @extend .sl-in;
-    color: var(--success-color);
-    border-color: var(--success-color);
+    // color: var(--sl-success-color);
+    border-color: var(--sl-success-color);
     &:focus-visible {
-      outline: 1px solid var(--success-color);
+      outline: 1px solid var(--sl-success-color);
     }
   }
   &-info {
     @extend .sl-in;
-    color: var(--info-color);
-    border-color: var(--info-color);
+    // color: var(--sl-info-color);
+    border-color: var(--sl-info-color);
     &:focus-visible {
-      outline: 1px solid var(--info-color);
+      outline: 1px solid var(--sl-info-color);
     }
   }
 }

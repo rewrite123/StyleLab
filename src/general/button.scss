@@ -2,13 +2,13 @@
   position: relative;
   margin: 5px 0px;
   padding: 10px;
-  font-size: var(--btn-font-size);
+  font-size: var(--sl-btn-font-size);
   font-weight: bold;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--text-primary);
+  border-radius: var(--sl-border-radius);
+  border: 1px solid var(--sl-text-primary);
   cursor: pointer;
   background: #0000;
-  z-index: var(--z-index-content);
+  z-index: var(--sl-z-index-content);
 
   &::before {
     content: "";
@@ -19,7 +19,7 @@
     height: 100%;  
     opacity: .2; 
     z-index: 1;
-    border-radius: var(--border-radius);
+    border-radius: var(--sl-border-radius);
     transition: opacity 0.1s;
   }
   &:hover::before {
@@ -33,68 +33,68 @@
 
   &-primary {
     @extend .sl-btn;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: var(--sl-primary-color);
+    border-color: var(--sl-primary-color);
 
     &::before {
-      background: var(--primary-color);
+      background: var(--sl-primary-color);
     }
   }
 
   &-secondary {
     @extend .sl-btn;
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--sl-secondary-color);
+    border-color: var(--sl-secondary-color);
     
     &::before {
-      background: var(--secondary-color);
+      background: var(--sl-secondary-color);
     }
   }
 
   
   &-danger {
     @extend .sl-btn;
-    color: var(--danger-color);
-    border-color: var(--danger-color);
+    color: var(--sl-danger-color);
+    border-color: var(--sl-danger-color);
 
     &::before {
-      background: var(--danger-color);
+      background: var(--sl-danger-color);
     }
   }
   &-hazard {
     @extend .sl-btn;
-    color: var(--hazard-color);
-    border-color: var(--hazard-color);
+    color: var(--sl-hazard-color);
+    border-color: var(--sl-hazard-color);
 
     &::before {
-      background: var(--hazard-color);
+      background: var(--sl-hazard-color);
     }
   }
   &-warning {
     @extend .sl-btn;
-    color: var(--warning-color);
-    border-color: var(--warning-color);
+    color: var(--sl-warning-color);
+    border-color: var(--sl-warning-color);
 
     &::before {
-      background: var(--warning-color);
+      background: var(--sl-warning-color);
     }
   }
   &-success {
     @extend .sl-btn;
-    color: var(--success-color);
-    border-color: var(--success-color);
+    color: var(--sl-success-color);
+    border-color: var(--sl-success-color);
 
     &::before {
-      background: var(--success-color);
+      background: var(--sl-success-color);
     }
   }
   &-info {
     @extend .sl-btn;
-    color: var(--info-color);
-    border-color: var(--info-color);
+    color: var(--sl-info-color);
+    border-color: var(--sl-info-color);
 
     &::before {
-      background: var(--info-color);
+      background: var(--sl-info-color);
     }
   }
 }

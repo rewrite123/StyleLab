@@ -2,37 +2,37 @@
   margin: 5px 0px;
   padding: 0px;
   border: 0px;
-  border-top: 1px solid var(--text-primary);
+  border-top: 1px solid var(--sl-text-primary);
   width: 100%;
-  z-index: var(--z-index-content);
+  z-index: var(--sl-z-index-content);
 
   &-primary {
     @extend .sl-hr;
-    border-color: var(--primary-color);
+    border-color: var(--sl-primary-color);
   }
   &-secondary {
     @extend .sl-hr;
-    border-color: var(--secondary-color);
+    border-color: var(--sl-secondary-color);
   }
 
   &-danger {
     @extend .sl-hr;
-    border-color: var(--danger-color);
+    border-color: var(--sl-danger-color);
   }
   &-hazard {
     @extend .sl-hr;
-    border-color: var(--hazard-color);
+    border-color: var(--sl-hazard-color);
   }
   &-warning {
     @extend .sl-hr;
-    border-color: var(--warning-color);
+    border-color: var(--sl-warning-color);
   }
   &-success {
     @extend .sl-hr;
-    border-color: var(--success-color);
+    border-color: var(--sl-success-color);
   }
   &-info {
     @extend .sl-hr;
-    border-color: var(--info-color);
+    border-color: var(--sl-info-color);
   }
 }
