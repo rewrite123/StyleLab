@@ -1,5 +1,65 @@
 .sl-a {
-  text-decoration: none;
+  color: var(--sl-info-color);
+  text-decoration: underline;
   cursor: pointer;
   z-index: var(--sl-z-index-content);
+
+  &:visited {
+    color: var(--sl-info-color);
+  }
+
+  &.sl-nodeco {
+    text-decoration: none;
+  }
+
+  &.sl-primary {
+    color: var(--sl-primary-color);
+    &:visited {
+      color: var(--sl-primary-color);
+    }
+  }
+  &.sl-secondary {
+    color: var(--sl-secondary-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+
+  &.sl-danger {
+    color: var(--sl-danger-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+  &.sl-hazard {
+    color: var(--sl-hazard-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+  &.sl-warning {
+    color: var(--sl-warning-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+  &.sl-success {
+    color: var(--sl-success-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+  &.sl-info {
+    color: var(--sl-info-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+  &.sl-disabled {
+    color: var(--sl-disabled-color);
+    &:visited {
+      color: var(--sl-secondary-color);
+    }
+  }
+
 }
