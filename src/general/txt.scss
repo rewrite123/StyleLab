@@ -1,0 +1,48 @@
+.sl-txt {
+  color: var(--sl-text-primary);
+  
+  &.sl-txt-bold {
+    font-weight: bold;
+  }
+  &.sl-txt-it {
+    font-style: italic;
+  }
+
+  &.sl-small {
+    font-size: var(--sl-text-small-size);
+  }
+
+  &.sl-txt-primary {
+    color: var(--sl-text-primary);
+  }
+  &.sl-txt-secondary {
+    color: var(--sl-text-secondary);
+  }
+
+  &.sl-primary {
+    color: var(--sl-primary-color);
+  }
+  &.sl-secondary {
+    color: var(--sl-secondary-color);
+  }
+
+  &.sl-danger {
+    color: var(--sl-danger-color);
+  }
+  &.sl-hazard {
+    color: var(--sl-hazard-color);
+  }
+  &.sl-warning {
+    color: var(--sl-warning-color);
+  }
+  &.sl-success {
+    color: var(--sl-success-color);
+  }
+  &.sl-info {
+    color: var(--sl-info-color);
+  }
+  &.sl-disabled {
+    color: var(--sl-disabled-color);
+  }
+
+}

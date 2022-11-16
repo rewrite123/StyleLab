@@ -53,7 +53,8 @@ interface CssVarsInterface {
   "--sl-z-index-alert"?: number;
 }
 </pre>
-  
+
+  <button class="sl-btn">button</button>
   <button class="sl-btn sl-primary">primary button</button>
   <button class="sl-btn sl-secondary">secondary button</button>
   <button class="sl-btn sl-danger">danger button</button>
@@ -61,6 +62,7 @@ interface CssVarsInterface {
   <button class="sl-btn sl-warning">warning button</button>
   <button class="sl-btn sl-success">success button</button>
   <button class="sl-btn sl-info">info button</button>
+  <button class="sl-btn sl-disabled">disabled button</button>
 
   <hr class="sl-hr" />
 
@@ -109,7 +111,7 @@ interface CssVarsInterface {
 
   <hr class="sl-hr" />
 
-  <input 
+  <input
     placeholder="example input"
     type="text" 
     class="sl-in"
@@ -153,8 +155,14 @@ interface CssVarsInterface {
 
   <input 
     placeholder="info input"
-    type="text" 
+    type="text"
     class="sl-in sl-info"
+  />
+
+  <input 
+    placeholder="disabled input"
+    type="text" 
+    class="sl-in sl-disabled"
   />
   
 

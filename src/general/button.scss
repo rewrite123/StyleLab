@@ -2,6 +2,7 @@
   position: relative;
   margin: 5px 0px;
   padding: 10px;
+  color: var(--sl-text-primary);
   font-size: var(--sl-btn-font-size);
   font-weight: bold;
   border-radius: var(--sl-border-radius);
@@ -9,6 +10,10 @@
   cursor: pointer;
   background: #0000;
   z-index: var(--sl-z-index-content);
+
+  &:active {
+    outline: 1px solid;
+  }
 
   &::before {
     content: "";
@@ -20,15 +25,16 @@
     opacity: .2; 
     z-index: 1;
     border-radius: var(--sl-border-radius);
+    // background: var(--sl-text-primary);
     transition: opacity 0.1s;
   }
   &:hover::before {
     opacity: .3;
-    transition: opacity 0.2s;
+    transition: opacity 0.1s;
   }
   &:active::before {
     opacity: .4;
-    transition: opacity 0.2s;
+    transition: opacity 0.0s;
   }
 
   &.sl-primary {
@@ -51,7 +57,7 @@
     }
   }
 
-  
+
   &.sl-danger {
     // @extend .sl-btn;
     color: var(--sl-danger-color);
@@ -101,10 +107,20 @@
     // @extend .sl-btn;
     color: var(--sl-disabled-color);
     border-color: var(--sl-disabled-color);
-
+    
     &::before {
       background: var(--sl-disabled-color);
+      opacity: .5;
     }
+  }
+
+  &:disabled {
+    color: var(--sl-disabled-color);
+    border-color: var(--sl-disabled-color);
+  }
+  &:disabled::before {
+    background: var(--sl-disabled-color);
+    opacity: .5;
   }
   
 }

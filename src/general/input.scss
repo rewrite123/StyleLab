@@ -17,6 +17,7 @@
     // @extend .sl-in;
     // color: var(--sl-primary-color);
     border-color: var(--sl-primary-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-primary-color);
     }
@@ -25,6 +26,7 @@
     // @extend .sl-in;
     // color: var(--sl-secondary-color);
     border-color: var(--sl-secondary-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-secondary-color);
     }
@@ -34,6 +36,7 @@
     // @extend .sl-in;
     // color: var(--sl-danger-color);
     border-color: var(--sl-danger-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-danger-color);
     }
@@ -42,6 +45,7 @@
     // @extend .sl-in;
     // color: var(--sl-hazard-color);
     border-color: var(--sl-hazard-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-hazard-color);
     }
@@ -50,6 +54,7 @@
     // @extend .sl-in;
     // color: var(--sl-warning-color);
     border-color: var(--sl-warning-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-warning-color);
     }
@@ -58,6 +63,7 @@
     // @extend .sl-in;
     // color: var(--sl-success-color);
     border-color: var(--sl-success-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-success-color);
     }
@@ -66,6 +72,7 @@
     // @extend .sl-in;
     // color: var(--sl-info-color);
     border-color: var(--sl-info-color);
+
     &:focus-visible {
       outline: 1px solid var(--sl-info-color);
     }
@@ -74,8 +81,25 @@
     // @extend .sl-in;
     // color: var(--sl-disabled-color);
     border-color: var(--sl-disabled-color);
+    background-color: var(--sl-disabled-color);
     &:focus-visible {
       outline: 1px solid var(--sl-disabled-color);
     }
+  }
+
+  &[aria-invalid] {
+    border-color: var(--sl-danger-color);
+    outline: 1px solid var(--sl-danger-color);
+  }
+  &[aria-invalid]:focus-visible {
+    outline: 1px solid var(--sl-danger-color);
+  }
+
+  &:disabled {
+    border-color: var(--sl-disabled-color);
+    background-color: var(--sl-disabled-color);
+  }
+  &:disabled:focus-visible {
+    outline: 1px solid var(--sl-disabled-color);
   }
 }

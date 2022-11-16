@@ -55,6 +55,7 @@
   --sl-shadow-h7: var(--sl-shadow-h7-x) var(--sl-shadow-h7-y) var(--sl-shadow-blur);
   
   --sl-text-size: 16px;
+  --sl-text-small-size: 13px; // Just 1px smaller than h6
 
   --sl-h1-size: 50px;
   --sl-h2-size: 42px;
@@ -78,6 +79,7 @@
   color: var(--sl-text-primary);
   font-family: 'Roboto', sans-serif;
   font-size: var(--sl-text-size);
+  background: var(--sl-background-primary);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -97,4 +99,5 @@
 @import './general/heading.scss';
 @import './general/hr.scss';
 @import './general/a.scss';
+@import './general/txt.scss';
 // The normal html elements that you use all the time
