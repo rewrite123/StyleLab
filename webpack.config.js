@@ -4,11 +4,30 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const fs = require('fs');
+const path = require('path');
+
+const findComponentsForBuild = ()=>{
+
+  const componentsForBuild = {};
+
+  const componentsDir ='./src/components';
+  const files = fs.readdirSync(componentsDir);
+  for(let file of files){
+    if(path.extname(file) == '.tsx'){
+      const componentName = file.substring(0, file.indexOf('.'));
+      componentsForBuild[componentName] = './' + path.join(componentsDir, file);
+    }
+  }
+  return componentsForBuild;
+}
+
 module.exports = {
   mode: process.env.NODE_ENV||'development',
   entry: {
     'style-lab': './src/StyleLab.ts',
     // 'style-lab': './src/index.scss',
+    ...findComponentsForBuild()
   },
   output: {
     path: __dirname + '/dist/',

@@ -16,7 +16,6 @@ interface ButtonPropsInterface extends React.ButtonHTMLAttributes<HTMLButtonElem
 
 const Button = (props: ButtonPropsInterface)=>{
 
-
   let buttonClasses = 'sl-btn';
   if(props.variant != undefined){
     buttonClasses += ` sl-${props.variant}`;
