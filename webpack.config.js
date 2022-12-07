@@ -18,10 +18,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ts)$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         resolve: {
-          extensions: ['.ts', '.json'],
+          extensions: ['.ts', '.tsx', '.js', '.jsx' ,'.json'],
         },
         use: 'ts-loader',
       },

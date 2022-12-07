@@ -81,10 +81,6 @@ Here is a complete list of the css vars you can change
   --sl-h5-size: 16px;
   --sl-h6-size: 12px;
 
-  --sl-in-font-size: 16px;
-
-  --sl-btn-font-size: 16px;
-
   // Z Indexes
   --sl-z-index-background: 200;
   --sl-z-index-content: 400;

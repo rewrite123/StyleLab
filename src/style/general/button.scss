@@ -3,7 +3,7 @@
   margin: 5px 0px;
   padding: 10px;
   color: var(--sl-text-primary);
-  font-size: var(--sl-btn-font-size);
+  font-size: var(--sl-h5-size);
   font-weight: bold;
   border-radius: var(--sl-border-radius);
   border: 1px solid var(--sl-text-primary);
@@ -123,4 +123,17 @@
     opacity: .5;
   }
   
+  &.sl-sm {
+    margin: 5px 0px;
+    padding: 7px;
+    font-size: var(--sl-h6-size);
+    font-weight: 400;
+  }
+  &.sl-lg {
+    margin: 5px 0px;
+    padding: 12px;
+    font-size: var(--sl-h4-size);
+    font-weight: bold;
+  }
+
 }

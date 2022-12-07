@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>StyleLab</title>
+  
+  <script>
+    const initialWindowProperties = Object.getOwnPropertyNames(window);
+
+    window.getUserDefinedWindowProperties = () => {
+      const windowProperties = Object.getOwnPropertyNames(window);
+      return windowProperties.filter(
+        (property) => !initialWindowProperties.includes(property)
+      );
+    }
+  </script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <!-- <link rel="stylesheet" href="./style-lab.css"> -->
@@ -55,7 +66,7 @@ interface CssVarsInterface {
 </pre>
 
   <button class="sl-btn">button</button>
-  <button class="sl-btn sl-primary">primary button</button>
+  <button class="sl-btn sl-primary ">primary button</button>
   <button class="sl-btn sl-secondary">secondary button</button>
   <button class="sl-btn sl-danger">danger button</button>
   <button class="sl-btn sl-hazard">hazard button</button>
