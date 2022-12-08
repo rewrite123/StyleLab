@@ -5,7 +5,7 @@ import Button  from './Button.comp';
 import { ButtonPropsInterface } from './Button.comp';
 
 export default {
-  title: 'Marbella/Button',
+  title: 'Button',
   component: Button,
   argTypes: {
   },

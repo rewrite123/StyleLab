@@ -1,20 +1,20 @@
 import React from 'react';
 
-import './Button.scss';
+import './Input.scss';
 
 import VariantType from '../../interfaces/VariantType.type';
 import ShadowType from '../../interfaces/ShadowType.type';
 import SizeType from '../../interfaces/SizeType.type';
 
-export interface ButtonPropsInterface extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface InputPropsInterface extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   variant?: VariantType;
   shadow?: ShadowType;
   size?: SizeType;
 }
 
-const Button = (props: ButtonPropsInterface)=>{
+const Input = (props: InputPropsInterface)=>{
 
-  let compClasses = 'sl-btn';
+  let compClasses = 'sl-in';
   if(props.variant != undefined){
     compClasses += ` sl-${props.variant}`;
   }
@@ -29,13 +29,13 @@ const Button = (props: ButtonPropsInterface)=>{
   }
 
   return (
-    <button
+    <input
       {...{props}}
       disabled={props.disabled}
       className={compClasses.toString()}
     >
       {props.children||props.value}
-    </button>
+    </input>
   );
 }
-export default Button;
+export default Input;

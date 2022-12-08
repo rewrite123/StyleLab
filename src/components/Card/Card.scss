@@ -1,0 +1,10 @@
+@import '../../style/vars.scss';
+@import '../../style/shadows.scss';
+
+.sl-card {
+  padding: 5px;
+  background-color: var(--sl-background-primary);
+  border: 1px solid var(--sl-border-primary);
+  border-radius: var(--sl-border-radius);
+  z-index: var(--sl-z-index-content);
+}
