@@ -1,1 +1,1 @@
-export { default } from "./UseTheme.hook";
+export { default } from "./useTheme.hook";
