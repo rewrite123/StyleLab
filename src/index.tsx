@@ -1,3 +1,4 @@
-import Button from './components/Button.comp';
+import Button from './components/Button/Button.comp';
 
-export { Button };
+// export { Button };
+export default { Button };
