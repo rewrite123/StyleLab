@@ -1,7 +1,7 @@
 {
-  "name": "@YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME",
+  "name": "stylelab",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/YOUR_REPOSITORY_NAME"
+    "registry": "https://github.com/rewrite123/StyleLab"
   },
   "version": "0.1.0",
   "description": "A simple template for a custom React component library",
