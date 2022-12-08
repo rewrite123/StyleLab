@@ -1,0 +1,78 @@
+// Have to use scss vars since thee css vars don't work with @media queries
+$xs-rule: 320px; // < 320px
+$sm-rule: 768px; // 768px  320px
+$md-rule: 992px; // 992px - 768px
+$lg-rule: 1200px; // 1200px - 992px
+//xl-rule: > 1200px;
+
+:root {
+  // Breakpoint rules - for use in everthing not a @media query
+  --sl-xs-rule: $xs-rule; // xtra small
+  --sl-sm-rule: $sm-rule; // small
+  --sl-md-rule: $md-rule; // medium
+  --sl-lg-rule: $lg-rule; // large
+  // xl is anything larger than lg; xtra large
+
+  // Color
+  --sl-primary-color: #2783ce; // Main color for your theme
+  --sl-secondary-color: #FF5D73; // Secondary color for your theme
+  --sl-accent-color: #86BBD8; // Accent colors for outstanding elements in your application
+  --sl-text-primary: #000; // Primary color for text content
+  --sl-text-secondary: #fff; // For content that isn't against your primary background; higher contrast
+  --sl-background-primary: #fff; // Main background color
+  --sl-background-secondary: #000; // Background for content that pops, stands out, or main features
+  --sl-border-primary: #b1b1b1; // Main border color
+  --sl-border-secondary: #cdcdcd; // Alternate border
+  --sl-shadow-primary: #00000088; // Shadow color, it's going to have a low alpha when applied
+  --sl-shadow-secondary: #94949488; // Shadow secondary if the primary shadow blends with the background
+
+  --sl-danger-color: #FD151B; // For xtremely important info that can't be ignored, data-breaches, etc... 
+  --sl-hazard-color: #F75C03; // For important info that needs to be addressed, server downtimes, etc... 
+  --sl-warning-color: #FFB30F; // Important info to a subject, disclaimers, caveats, etc... 
+  --sl-success-color: #2DDD88; // Success ,good job, saved settings, etc... 
+  --sl-info-color: #4b92e3; // Info about a section or subject, knowledge, oracles, etc... 
+  --sl-disabled-color: #898989; // When things are not available, behind a paywall, etc... 
+
+  // Spacing & sizing
+  --sl-border-radius: 8px;
+
+  --sl-shadow-blur: 3px;
+  // delta = 1px:2.5px | (x: number)=>`${5+1*x}px ${5+2.5*x}px 3px`
+  --sl-shadow-h1-x: 5px;
+  --sl-shadow-h1-y: 5px;
+  --sl-shadow-h1: var(--sl-shadow-h1-x) var(--sl-shadow-h1-y) var(--sl-shadow-blur);
+  --sl-shadow-h2-x: 6px;
+  --sl-shadow-h2-y: 7.5px;
+  --sl-shadow-h2: var(--sl-shadow-h2-x) var(--sl-shadow-h2-y) var(--sl-shadow-blur);
+  --sl-shadow-h3-x: 7px;
+  --sl-shadow-h3-y: 10px;
+  --sl-shadow-h3: var(--sl-shadow-h3-x) var(--sl-shadow-h3-y) var(--sl-shadow-blur);
+  --sl-shadow-h4-x: 8px;
+  --sl-shadow-h4-y: 12.5px;
+  --sl-shadow-h4: var(--sl-shadow-h4-x) var(--sl-shadow-h4-y) var(--sl-shadow-blur);
+  --sl-shadow-h5-x: 9px;
+  --sl-shadow-h5-y: 15px;
+  --sl-shadow-h5: var(--sl-shadow-h5-x) var(--sl-shadow-h5-y) var(--sl-shadow-blur);
+  --sl-shadow-h6-x: 10px;
+  --sl-shadow-h6-y: 17.5px;
+  --sl-shadow-h6: var(--sl-shadow-h6-x) var(--sl-shadow-h6-y) var(--sl-shadow-blur);
+  --sl-shadow-h7-x: 11px;
+  --sl-shadow-h7-y: 20px;
+  --sl-shadow-h7: var(--sl-shadow-h7-x) var(--sl-shadow-h7-y) var(--sl-shadow-blur);
+  
+  --sl-text-size: 16px; // Standard size for text content
+  --sl-text-small-size: 13px; // Just 1px smaller than h6
+
+  --sl-h1-size: 50px; // Jumbotons, front-page stuff
+  --sl-h2-size: 42px; // Chapters, major sections, titles
+  --sl-h3-size: 34px; // Sections, titles
+  --sl-h4-size: 26px; // Sections, sub-sections, minor headings
+  --sl-h5-size: 18px; // Should only barely stand out from regular text
+  --sl-h6-size: 14px; // For small, but important information
+
+  // Z Indexes
+  --sl-z-index-background: 200;
+  --sl-z-index-content: 400;
+  --sl-z-index-modal: 600;
+  --sl-z-index-alert: 800;
+}

@@ -1,8 +1,6 @@
 import React from 'react';
 
-import '../../style/vars.scss';
-import '../../style/general/button.scss';
-import '../../style/general/shadows.scss';
+import './Button.scss';
 
 import VariantType from '../../interfaces/VariantType.type';
 import ShadowType from '../../interfaces/ShadowType.type';
@@ -36,6 +34,7 @@ const Button = (props: ButtonPropsInterface)=>{
   return (
     <button
       {...{props}}
+      disabled={props.disabled}
       className={buttonClasses.toString()}
     >
       {props.children||props.value}

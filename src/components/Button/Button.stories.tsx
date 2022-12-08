@@ -1,8 +1,8 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Button  from '../components/Button/Button.comp';
-import { ButtonPropsInterface } from '../components/Button/Button.comp';
+import Button  from './Button.comp';
+import { ButtonPropsInterface } from './Button.comp';
 
 export default {
   title: 'Marbella/Button',

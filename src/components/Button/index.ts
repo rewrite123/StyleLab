@@ -1,3 +1,1 @@
-import Button from "./Button.comp";
-
-export default Button;
+export { default } from "./Button.comp";
