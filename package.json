@@ -1,12 +1,12 @@
 {
-  "name": "stylelab",
+  "name": "@rewrite123/StyleLab",
   "publishConfig": {
     "registry": "https://github.com/rewrite123/StyleLab"
   },
   "version": "0.1.0",
   "description": "A simple template for a custom React component library",
   "scripts": {
-    "rollup": "rollup -c",
+    "build": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
